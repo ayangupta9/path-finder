@@ -1,0 +1,35 @@
+#node {
+  width: 20px;
+  height: 20px;
+  border: solid 0.01em #999;
+}
+
+#node:hover::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0.3;
+  background-color: #808080;
+}
+
+.node-finish {
+  background-color: #ff0000;
+}
+
+.node-start {
+  background-color: #008000;
+}
+
+.node-path {
+  background-color: #ffff00;
+  z-index: 3;
+}
+
+.node-visited {
+  background-color: #add8e6;
+}
+
+.node-wall {
+  background-color: #0c3547;
+}
